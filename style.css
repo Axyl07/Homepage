@@ -1,0 +1,52 @@
+h1 {
+  font-family: "Roboto Mono";
+}
+i {
+  font-size: 2rem;
+}
+.head {
+  margin-top: 1vw;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  height: 50vh;
+}
+.headContent {
+  margin-top: 3vw;
+  border: 2px solid black;
+  padding: 0px 1vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  max-height: 30vh;
+  justify-content: center;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.img {
+  height: 45vh;
+  width: 45vw;
+  background: url(./gojo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.projectImg{
+    height: 25vh;
+    background-color: aqua;
+}
+main{
+    padding: 0px 15vw;
+}
+.projects{
+    /* padding: 0px 300px; */
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+}
+.project{
+    min-width: 150px;
+}
