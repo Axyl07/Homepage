@@ -13,20 +13,18 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
-
 }
-.head {
-  margin-top: 1vw;
+/* .head {
+
   display: flex;
   gap: 0;
   justify-content: center;
   height: 50vh;
-}
+} */
 .headContent {
+  max-width: 30vw;
   margin-top: 3vw;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 1vw 1vw;
   display: flex;
   flex-direction: column;
@@ -42,12 +40,24 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1
   display: flex;
   justify-content: flex-end;
 }
-.img {
-  height: 45vh;
-  width: 45vw;
-  background: url(./gojo.jpg);
+.imageText{
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  position: relative;
+  /* height: 45vh; */
+  width: 35vw;
+  /* background: url(./gojo.jpg);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 .projectImg{
     height: 25vh;
@@ -56,6 +66,11 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1
 main{
   min-height: 50vw;
     margin: 0px 10vw;
+
+}
+
+main > h1{
+  text-align: center;
 }
 
 .projects{
@@ -63,7 +78,7 @@ main{
     gap: 3vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     flex: 1;
 }
 .project{
@@ -96,4 +111,73 @@ background: linear-gradient(90deg, rgba(0, 241, 245, 1) 0%, rgba(9, 9, 121, 0.79
   border-radius: 25px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1200px) {
+  img {
+  /* translate: -25%, -25%; */
+  /* height: 45vh; */
+  /* z-index: 2; */
+  width: 35vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  .footerContent{
+    width: 50vw;
+  }
+
+  .footerImg{
+  margin: 1em;
+  background-image: url(./gojoFCropped.jpg);
+  height: 30vh;
+  width: 30vw;
+  border-radius: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+  
+}
+
+
+@media (max-width: 600px){
+  /* Mobile */
+  header{
+    gap: 1vh;
+    padding: 1vh 1vw;
+    display: flex;
+    /* padding: 5vh 0 ; */
+    flex-direction: column;
+  }
+  .icons2{
+    display: flex;
+    justify-content: space-around;
+  }
+  .headContent{
+    margin: 0;
+  }
+  .icons{
+    justify-content: space-between ;
+  }
+  .footerImg{
+    width: 100%;
+    background-position: center;
+  }
+  footer{
+    gap: 25px;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
