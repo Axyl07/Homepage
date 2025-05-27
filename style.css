@@ -13,6 +13,7 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 /* .head {
 
@@ -22,14 +23,13 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1
   height: 50vh;
 } */
 .headContent {
+  position: relative;
   max-width: 30vw;
   margin-top: 3vw;
-  /* border: 2px solid black; */
   padding: 1vw 1vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 30vw;
   /* max-height: 30vh; */
   height: fit-content;
   justify-content: center;
@@ -50,18 +50,19 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1
   background: rgba(0, 0, 0, 0.5);
 }
 
-img {
+.normalImage {
+  transition: 0.2s ease-in;
   position: relative;
-  /* height: 45vh; */
   width: 35vw;
-  /* background: url(./gojo.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; */
+  border-radius: 25px;
 }
 .projectImg{
-    height: 25vh;
-    background-color: aqua;
+  height: 25vh;
+    /* width: 25vw; */
+    background-image: url(./nah.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 main{
   min-height: 50vw;
@@ -87,8 +88,12 @@ main > h1{
   padding: 1%;
     min-width: 100px;
     max-width: 350px;
+    transition: 0.25s ease-in-out;
 }
-
+.projects>.project:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
 footer{
   border-radius: 25px;
   padding: 5vh 5vw;
@@ -111,45 +116,26 @@ background: linear-gradient(90deg, rgba(0, 241, 245, 1) 0%, rgba(9, 9, 121, 0.79
   border-radius: 25px;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 0.2s ease-in;
 }
 
 
 /* Tablet */
 @media (min-width: 600px) and (max-width: 1200px) {
-  img {
-  /* translate: -25%, -25%; */
-  /* height: 45vh; */
-  /* z-index: 2; */
-  width: 35vw;
-
-}
-
-
-
-
-
-
-
-
-
-
-
   .footerContent{
     width: 50vw;
   }
 
   .footerImg{
+  transition: 0.2s ease-in;
   margin: 1em;
   background-image: url(./gojoFCropped.jpg);
-  height: 30vh;
-  width: 30vw;
   border-radius: 5px;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+}  
 }
-  
-}
-
 
 @media (max-width: 600px){
   /* Mobile */
