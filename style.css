@@ -1,8 +1,21 @@
-h1 {
+h1 , h2,  p {
   font-family: "Roboto Mono";
 }
 i {
   font-size: 2rem;
+}
+header{
+  background: #22C1C3;
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  margin: 5vh 10vw;
+  padding: 5vh 5vw;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+
 }
 .head {
   margin-top: 1vw;
@@ -14,14 +27,18 @@ i {
 .headContent {
   margin-top: 3vw;
   border: 2px solid black;
-  padding: 0px 1vw;
+  padding: 1vw 1vw;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 30vw;
-  max-height: 30vh;
+  /* max-height: 30vh; */
+  height: fit-content;
   justify-content: center;
 }
 .icons {
+  padding: 0px 1vw;
+  gap: 10px;
   display: flex;
   justify-content: flex-end;
 }
@@ -37,16 +54,46 @@ i {
     background-color: aqua;
 }
 main{
-    padding: 0px 15vw;
+  min-height: 50vw;
+    margin: 0px 10vw;
 }
+
 .projects{
     /* padding: 0px 300px; */
-    gap: 10px;
+    gap: 3vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex: 1;
 }
 .project{
-    min-width: 150px;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 1%;
+    min-width: 100px;
+    max-width: 350px;
+}
+
+footer{
+  border-radius: 25px;
+  padding: 5vh 5vw;
+  background: #00f1f5;
+background: linear-gradient(90deg, rgba(0, 241, 245, 1) 0%, rgba(9, 9, 121, 0.79) 74%, rgba(204, 16, 16, 0.43) 100%);
+  display: flex;
+  margin: 5vh 10vw;
+}
+.phone , .email{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerImg{
+  background-image: url(./gojoF.jpg);
+  height: 45vh;
+  width: 45vw;
+  border-radius: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
